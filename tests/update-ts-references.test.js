@@ -18,7 +18,7 @@ const setup = async (rootFolder) => {
   try {
     await execSh('node -v', {
       stdio: null,
-      cwd: rootFolder,
+      cwd: process.cwd(),
     });
   } catch (e) {
     console.log('Error: ', e);
