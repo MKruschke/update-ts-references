@@ -16,7 +16,7 @@ const compilerOptions = { outDir: 'dist', rootDir: 'src' };
 
 const setup = async (rootFolder) => {
   try {
-    await execSh('npx update-ts-references --discardComments', {
+    await execSh('node -v', {
       stdio: null,
       cwd: rootFolder,
     });
